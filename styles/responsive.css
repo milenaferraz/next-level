@@ -1,0 +1,36 @@
+@media (max-width: 900px) {
+    .background{
+        background-position-x: 70vw;
+    }
+
+    .header{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .header a {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    main {
+        align-items: center;
+        text-align: center;
+        
+    }
+}
+
+@media (min-width: 1700px){
+    .background{
+    background-position-x: 40vw;
+    }
+}
+
+@media (max-height: 760px){
+    .background{
+        background-position-y: 200px;
+        }
+}

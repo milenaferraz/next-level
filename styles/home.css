@@ -1,34 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-:root {
-    --title-color: #322153;
-    --primary-color:#34cb79
-}
-
-html{
-    font-family: Roboto, sans-serif;
-}
-
-body{
-    background: #f0f0f5;
-    -webkit-font-smoothing: antialiased;
-}
-
-a{
-    text-decoration: none;
-}
-
-h1{
-    color: var(--title-color);
-    font-size: 54px;
-    font-family: Ubuntu, sans-serif;
-}
-
 .background{
-    background: url(./assets/icones/home-background.svg) no-repeat;
+    background: url(../assets/icones/home-background.svg) no-repeat;
     height: 100vh;
     background-position: 35vw bottom;
 }
@@ -55,10 +26,14 @@ h1{
 
 .header span{
     display:flex;
-    background-image: url(./assets/icones/log-in.svg);
+    background-image: url(../assets/icones/log-in.svg);
     width: 20px;
     height: 20px;
     margin-right: 16px;
+}
+
+.header img{
+    cursor: pointer;
 }
 
 .main{
@@ -108,7 +83,7 @@ h1{
 
 .main a span::after{
     content:"";
-    background-image: url(./assets/icones/search.svg);
+    background-image: url(../assets/icones/search.svg);
     width: 20px;
     height: 20px;
 }
@@ -119,27 +94,3 @@ h1{
     text-align: center;
 }
 
-@media (max-width: 900px) {
-    .background{
-        background-position-x: 70vw;
-    }
-
-    .header{
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .header a {
-        position: absolute;
-        bottom: 48px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    main {
-        align-items: center;
-        text-align: center;
-        
-    }
-}
